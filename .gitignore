@@ -1,4 +1,8 @@
 Datasets/
 .vscode/
 .vs/
-Documentation/
+
+# Ignore all files in the Documentation directory
+Documentation/*
+# Except the build folder
+!Documentation/build/
