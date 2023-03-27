@@ -1,0 +1,154 @@
+IDS_CIC data
+Feature 1:	"Dst Port" 💻
+Feature 2:	"Protocol" 💻
+Feature 3:	"Timestamp"
+Feature 4:	"Flow Duration" 💻
+Feature 5:	"Tot Fwd Pkts" 💻
+Feature 6:	"Tot Bwd Pkts" 💻
+Feature 7:	"TotLen Fwd Pkts"
+Feature 8:	"TotLen Bwd Pkts"
+Feature 9:	"Fwd Pkt Len Max"
+Feature 10:	"Fwd Pkt Len Min"
+Feature 11:	"Fwd Pkt Len Mean" 💻
+Feature 12:	"Fwd Pkt Len Std"
+Feature 13:	"Bwd Pkt Len Max"
+Feature 14:	"Bwd Pkt Len Min"
+Feature 15:	"Bwd Pkt Len Mean" 💻
+Feature 16:	"Bwd Pkt Len Std"
+Feature 17:	"Flow Byts/s"
+Feature 18:	"Flow Pkts/s"
+Feature 19:	"Flow IAT Mean" 💻
+Feature 20:	"Flow IAT Std"
+Feature 21:	"Flow IAT Max"
+Feature 22:	"Flow IAT Min"
+Feature 23:	"Fwd IAT Tot"
+Feature 24:	"Fwd IAT Mean"
+Feature 25:	"Fwd IAT Std"
+Feature 26:	"Fwd IAT Max"
+Feature 27:	"Fwd IAT Min"
+Feature 28:	"Bwd IAT Tot"
+Feature 29:	"Bwd IAT Mean" 💻
+Feature 30:	"Bwd IAT Std"
+Feature 31:	"Bwd IAT Max"
+Feature 32:	"Bwd IAT Min"
+Feature 33:	"Fwd PSH Flags" 💻
+Feature 34:	"Fwd Header Len" 💻
+Feature 35:	"Bwd Header Len" 💻
+Feature 36:	"Fwd Pkts/s"
+Feature 37:	"Bwd Pkts/s"
+Feature 38:	"Pkt Len Min"
+Feature 39:	"Pkt Len Max"
+Feature 40:	"Pkt Len Mean" 💻
+Feature 41:	"Pkt Len Std"
+Feature 42:	"Pkt Len Var"
+Feature 43:	"FIN Flag Cnt"
+Feature 44:	"SYN Flag Cnt"
+Feature 45:	"RST Flag Cnt"
+Feature 46:	"PSH Flag Cnt" 💻
+Feature 47:	"ACK Flag Cnt"
+Feature 48:	"URG Flag Cnt" 💻
+Feature 49:	"ECE Flag Cnt"
+Feature 50:	"Down/Up Ratio"
+Feature 51:	"Pkt Size Avg"
+Feature 52:	"Fwd Seg Size Avg"
+Feature 53:	"Bwd Seg Size Avg"
+Feature 54:	"Subflow Fwd Pkts"
+Feature 55:	"Subflow Fwd Byts"
+Feature 56:	"Subflow Bwd Pkts"
+Feature 57:	"Subflow Bwd Byts"
+Feature 58:	"Init Fwd Win Byts" 💻
+Feature 59:	"Init Bwd Win Byts" 💻
+Feature 60:	"Fwd Act Data Pkts"
+Feature 61:	"Fwd Seg Size Min"
+Feature 62:	"Active Mean" 💻
+Feature 63:	"Active Std"
+Feature 64:	"Active Max"
+Feature 65:	"Active Min"
+Feature 66:	"Idle Mean" 💻
+Feature 67:	"Idle Std"
+Feature 68:	"Idle Max"
+Feature 69:	"Idle Min"
+Feature 70:	"Label" 💻
+[1,2,4,5,6,11,15,19,29,33,34,35,40,46,48,58,59,62,66]
+
+ML_CVE
+Feature 1:	" Destination Port" 💻
+Feature 2:	" Flow Duration" 💻
+Feature 3:	" Total Fwd Packets" 💻
+Feature 4:	" Total Backward Packets" 💻
+Feature 5:	"Total Length of Fwd Packets"
+Feature 6:	" Total Length of Bwd Packets"
+Feature 7:	" Fwd Packet Length Max"
+Feature 8:	" Fwd Packet Length Min"
+Feature 9:	" Fwd Packet Length Mean" 💻
+Feature 10:	" Fwd Packet Length Std"
+Feature 11:	"Bwd Packet Length Max"
+Feature 12:	" Bwd Packet Length Min"
+Feature 13:	" Bwd Packet Length Mean" 💻
+Feature 14:	" Bwd Packet Length Std"
+Feature 15:	"Flow Bytes/s"
+Feature 16:	" Flow Packets/s"
+Feature 17:	" Flow IAT Mean" 💻
+Feature 18:	" Flow IAT Std"
+Feature 19:	" Flow IAT Max"
+Feature 20:	" Flow IAT Min"
+Feature 21:	"Fwd IAT Total"
+Feature 22:	" Fwd IAT Mean" 💻
+Feature 23:	" Fwd IAT Std"
+Feature 24:	" Fwd IAT Max"
+Feature 25:	" Fwd IAT Min"
+Feature 26:	"Bwd IAT Total"
+Feature 27:	" Bwd IAT Mean" 💻
+Feature 28:	" Bwd IAT Std"
+Feature 29:	" Bwd IAT Max"
+Feature 30:	" Bwd IAT Min"
+Feature 31:	"Fwd PSH Flags" 💻
+Feature 32:	" Bwd PSH Flags" 💻
+Feature 33:	" Fwd URG Flags" 💻
+Feature 34:	" Bwd URG Flags" 💻
+Feature 35:	" Fwd Header Length" 💻
+Feature 36:	" Bwd Header Length" 💻
+Feature 37:	"Fwd Packets/s"
+Feature 38:	" Bwd Packets/s"
+Feature 39:	" Min Packet Length"
+Feature 40:	" Max Packet Length"
+Feature 41:	" Packet Length Mean" 💻
+Feature 42:	" Packet Length Std"
+Feature 43:	" Packet Length Variance"
+Feature 44:	"FIN Flag Count"
+Feature 45:	" SYN Flag Count"
+Feature 46:	" RST Flag Count"
+Feature 47:	" PSH Flag Count"
+Feature 48:	" ACK Flag Count"
+Feature 49:	" URG Flag Count"
+Feature 50:	" CWE Flag Count"
+Feature 51:	" ECE Flag Count"
+Feature 52:	" Down/Up Ratio"
+Feature 53:	" Average Packet Size"
+Feature 54:	" Avg Fwd Segment Size"
+Feature 55:	" Avg Bwd Segment Size"
+Feature 56:	" Fwd Header Length.1"
+Feature 57:	"Fwd Avg Bytes/Bulk"
+Feature 58:	" Fwd Avg Packets/Bulk"
+Feature 59:	" Fwd Avg Bulk Rate"
+Feature 60:	" Bwd Avg Bytes/Bulk"
+Feature 61:	" Bwd Avg Packets/Bulk"
+Feature 62:	"Bwd Avg Bulk Rate"
+Feature 63:	"Subflow Fwd Packets"
+Feature 64:	" Subflow Fwd Bytes"
+Feature 65:	" Subflow Bwd Packets"
+Feature 66:	" Subflow Bwd Bytes"
+Feature 67:	"Init_Win_bytes_forward" 💻
+Feature 68:	" Init_Win_bytes_backward" 💻
+Feature 69:	" act_data_pkt_fwd"
+Feature 70:	" min_seg_size_forward"
+Feature 71:	"Active Mean" 💻
+Feature 72:	" Active Std"
+Feature 73:	" Active Max"
+Feature 74:	" Active Min"
+Feature 75:	"Idle Mean" 💻
+Feature 76:	" Idle Std"
+Feature 77:	" Idle Max"
+Feature 78:	" Idle Min"
+Feature 79:	" Label" 💻
+[1,2,3,4,9,13,17,22,27,31,32,33,34,35,36,41,67,68,71,75]
