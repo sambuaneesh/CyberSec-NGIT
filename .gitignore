@@ -3,6 +3,6 @@ Datasets/
 .vs/
 
 # Ignore all files in the Documentation directory
-Documentation/*
+Documentation/
 # Except the build folder
 
