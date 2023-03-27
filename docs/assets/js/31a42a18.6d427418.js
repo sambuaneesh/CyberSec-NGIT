@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[130],{6489:e=>{e.exports=JSON.parse('{"label":"decision-tree","permalink":"/CyberSec-NGIT/blog/tags/decision-tree","allTagsPath":"/CyberSec-NGIT/blog/tags","count":1}')}}]);
