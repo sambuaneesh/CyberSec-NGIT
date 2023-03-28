@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-test-site.com/CyberSec-NGIT/blog</id>
-    <title>Hello Viewer! 👋 Blog</title>
+    <title>Hello Node! 👋 Blog</title>
     <updated>2023-03-27T18:58:24.486Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://your-docusaurus-test-site.com/CyberSec-NGIT/blog"/>
-    <subtitle>Hello Viewer! 👋 Blog</subtitle>
+    <subtitle>Hello Node! 👋 Blog</subtitle>
     <icon>https://your-docusaurus-test-site.com/CyberSec-NGIT/img/letter_S_blue-512.webp</icon>
     <entry>
         <title type="html"><![CDATA[Decision Tree Classifier]]></title>
