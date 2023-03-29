@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Decision Tree Classifier","permalink":"/CyberSec-NGIT/blog/decision-tree"},{"title":"ARP Scan","permalink":"/CyberSec-NGIT/blog/arp-scan"}]}')}}]);

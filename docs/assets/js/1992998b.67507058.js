@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[9995],{9343:e=>{e.exports=JSON.parse('{"label":"knn","permalink":"/CyberSec-NGIT/blog/tags/knn","allTagsPath":"/CyberSec-NGIT/blog/tags","count":2}')}}]);

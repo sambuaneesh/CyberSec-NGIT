@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[2696],{8035:a=>{a.exports=JSON.parse('{"label":"gaussian naive bayes","permalink":"/CyberSec-NGIT/blog/tags/gaussian-naive-bayes","allTagsPath":"/CyberSec-NGIT/blog/tags","count":1}')}}]);

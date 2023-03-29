@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[6441],{2937:e=>{e.exports=JSON.parse('{"label":"naive bayes","permalink":"/CyberSec-NGIT/blog/tags/naive-bayes","allTagsPath":"/CyberSec-NGIT/blog/tags","count":1}')}}]);

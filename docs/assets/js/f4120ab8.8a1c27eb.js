@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[1121],{4784:e=>{e.exports=JSON.parse('{"permalink":"/CyberSec-NGIT/blog/tags/weighted-knn","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
