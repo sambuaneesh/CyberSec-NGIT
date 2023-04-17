@@ -67,12 +67,60 @@
 # # export the processed csv file
 # df.to_csv('processed.csv', index=False)
 
+# # CheckPoint
+
+# import pandas as pd
+# import numpy as np
+
+# name = "02-28-2018"
+# # read in the original csv file
+# df = pd.read_csv(
+#     rf"D:\Stuff\CyberSec\Datasets\IDS2018\{name}.csv")
+
+# # convert string labels to integer labels
+# if 'label' in df.columns:
+#     label_col = 'label'
+# elif 'Label' in df.columns:
+#     label_col = 'Label'
+# else:
+#     raise ValueError('Label column not found')
+# label_map = {val: i for i, val in enumerate(df[label_col].unique())}
+# df[label_col] = df[label_col].map(label_map)
+
+# # remove columns containing alphabets
+# df = df.select_dtypes(exclude=['object'])
+
+
+# # drop columns where all the values are zero
+# df = df.loc[:, (df != 0).any(axis=0)]
+
+# # drop columns where each value in the column is zero
+# df = df.loc[:, (df != 0).all(axis=0) == False]
+
+# # remove columns where all values are infinite
+# df = df.loc[:, (df != np.inf).any(axis=0)]
+# df = df.loc[:, (df != -np.inf).any(axis=0)]
+
+# # replace infinite and too large values with NaN
+# df = df.replace([np.inf, np.nan, np.finfo(np.float32).max], np.nan)
+
+# # remove rows with null values
+# df = df.dropna()
+
+# # sample 10000 rows
+# # df = df.sample(n=50000)
+
+# # export the processed csv file
+# df.to_csv(
+#     rf"D:\Stuff\CyberSec\Datasets\IDS2018\{name}_processed.csv", index=False)
 
 import pandas as pd
 import numpy as np
 
+name = "02-20-2018"
 # read in the original csv file
-df = pd.read_csv(r"D:\Stuff\CyberSec\Datasets\IDS2018\02-14-2018.csv")
+df = pd.read_csv(
+    rf"D:\Stuff\CyberSec\Datasets\IDS2018\{name}.csv")
 
 # convert string labels to integer labels
 if 'label' in df.columns:
@@ -84,9 +132,22 @@ else:
 label_map = {val: i for i, val in enumerate(df[label_col].unique())}
 df[label_col] = df[label_col].map(label_map)
 
-# remove columns containing alphabets
-df = df.select_dtypes(exclude=['object'])
+# convert object columns to numeric, remove them if the conversion fails
+for col in df.select_dtypes(include='object').columns:
+    converted_col = pd.to_numeric(df[col], errors='coerce')
+    if converted_col.isna().all():
+        # all values in the column are non-numeric, drop the column
+        df = df.drop(columns=[col])
+    else:
+        # some values in the column are numeric, replace the column with the converted values
+        df[col] = converted_col
 
+# remove rows with non-numeric values in columns where the majority of values are numeric
+for col in df.select_dtypes(include=['int', 'float']).columns:
+    converted_col = pd.to_numeric(df[col], errors='coerce')
+    if converted_col.notna().sum() / len(converted_col) >= 0.5:
+        # the majority of values in the column are numeric, remove rows with non-numeric values
+        df = df[converted_col.notna()]
 
 # drop columns where all the values are zero
 df = df.loc[:, (df != 0).any(axis=0)]
@@ -108,4 +169,5 @@ df = df.dropna()
 # df = df.sample(n=50000)
 
 # export the processed csv file
-df.to_csv('processed_final.csv', index=False)
+df.to_csv(
+    rf"D:\Stuff\CyberSec\Datasets\IDS2018\{name}_processed.csv", index=False)
